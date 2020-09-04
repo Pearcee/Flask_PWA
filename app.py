@@ -5,6 +5,7 @@ import re
 
 app = Flask(__name__)
 
+
 # Replace the existing home function with the one below
 @app.route("/")
 def home():
@@ -24,7 +25,7 @@ def contact():
 
 @app.route("/hello/")
 @app.route("/hello/<name>")
-def hello_there(name = None):
+def hello_there(name=None):
     return render_template(
         "hello_there.html",
         name=name,
@@ -35,3 +36,17 @@ def hello_there(name = None):
 @app.route("/api/data")
 def get_data():
     return app.send_static_file("data.json")
+
+
+@app.route('/offline.html')
+def offline():
+    return app.send_static_file('offline.html')
+
+
+@app.route('/service-worker.js')
+def sw():
+    return app.send_static_file('service-worker.js')
+
+
+if __name__ == '__main__':
+    app.run(debug=True, host="0.0.0.0", port=8080)
