@@ -9,9 +9,8 @@ pip3 install flask
 python3 -m flask run
 
 # Windows
-python -m venv env
-*
-Ctrl+Shift+P. Then select the Python: Select Interpreter command:
-*
-python -m flask run
-
+python -m venv env  
+Ctrl+Shift+P. Then select the Python: Select Interpreter command:  
+python -m flask run  
+  
+  
