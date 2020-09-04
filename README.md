@@ -5,29 +5,11 @@ git clone https://github.com/Pearcee/Flask_PWA.git
 # macOS/Linux
 sudo apt-get install python3-venv    # If needed
 python3 -m venv env
-
-# Windows
-python -m venv env
-
-Ctrl+Shift+P. Then select the Python: Select Interpreter command:
-
-# macOS/Linux
 pip3 install flask
-
-# Windows
-pip install flask
-
-# macOS/Linux
-
-# Windows
-pip install flask
-
-# macOS/Linux
 python3 -m flask run
 
 # Windows
+python -m venv env
+Ctrl+Shift+P. Then select the Python: Select Interpreter command:
 python -m flask run
 
-# macOS/Linux
-
-# Windows
